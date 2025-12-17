@@ -7,7 +7,7 @@ Backend proxy for calling OpenAI safely from mobile/web apps (API key stays on s
 - POST /chat (non-stream)
 - POST /chat/stream (SSE streaming)
 
-## Setup
+## Run
 ```bat
 python -m venv .venv
 .\.venv\Scripts\activate.bat
