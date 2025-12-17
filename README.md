@@ -13,3 +13,9 @@ python -m venv .venv
 .\.venv\Scripts\activate.bat
 pip install -r requirements.txt
 python -m uvicorn app:app --reload --port 8000
+
+## Test (non-stream)
+```bat
+curl http://127.0.0.1:8000/health
+curl -X POST http://127.0.0.1:8000/chat -H "Content-Type: application/json" -d "{\"messages\":[{\"role\":\"user\",\"content\":\"Say hi\"}]}"
+
